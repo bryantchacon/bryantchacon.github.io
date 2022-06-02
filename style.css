@@ -68,7 +68,7 @@ html {
 }
 
 .name-and-description, .portfolio, .skills, .tools, .cv, .contact {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .name {
@@ -85,6 +85,7 @@ html {
 .title {
     font-size: 25px;
     font-weight: normal;
+    padding-top: 20px;
     margin-bottom: 50px;
 }
 
