@@ -98,7 +98,7 @@ html {
 }
 
 .artstation-sections img {
-    width: 250px;
+    width: 280px;
     margin-bottom: 20px;
     border-radius: var(--border-radius-10);
 }
@@ -109,7 +109,7 @@ html {
 
 .artstation-and-github-links {
     display: flex;    
-    max-width: 600px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
