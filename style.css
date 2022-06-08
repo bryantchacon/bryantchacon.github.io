@@ -168,8 +168,9 @@ html {
 }
 
 .contact__item {
-    margin: 0 10px;
     display: var(--display);
+    margin: 0 10px;
+    margin-bottom: 10px;
 }
 
 .contact__item img {
