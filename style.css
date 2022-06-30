@@ -85,6 +85,7 @@ html {
 
 .artstation-sections {
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .artstation-sections__item{
@@ -134,7 +135,7 @@ html {
 }
 
 .skills ul {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -153,7 +154,7 @@ html {
 }
 
 .tools ul {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
