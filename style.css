@@ -58,6 +58,7 @@ html {
     background-image: url(https://cdna.artstation.com/p/users/covers/000/872/214/default/f28c49b073f24c18760f17a1e3e57690.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
+    text-shadow: 2px 2px 3px black;
     padding: 150px 0;
 }
 
@@ -85,7 +86,6 @@ html {
 
 .artstation-sections {
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 .artstation-sections__item{
