@@ -170,6 +170,10 @@ html {
     border-radius: var(--border-radius-10);
 }
 
+.cv img {
+    width: 260px;
+}
+
 .contact__item {
     display: var(--display);
     margin: 0 10px;
