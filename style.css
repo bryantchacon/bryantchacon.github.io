@@ -62,7 +62,7 @@ html {
     padding: 150px 0;
 }
 
-.name-and-description, .portfolio, .skills, .tools, .cv, .contact {
+.name-and-description, .portfolio, .skills, .software, .cv, .contact {
     margin-bottom: 60px;
 }
 
@@ -153,18 +153,18 @@ html {
     background-color: var(--text-color);
 }
 
-.tools ul {
+.software ul {
     max-width: 700px;
     margin: 0 auto;
 }
 
-.tools__item {
+.software__item {
     margin: 0 20px;
     margin-bottom: 20px;
     display: var(--display);
 }
 
-.tools__item img {
+.software__item img {
     padding: 3px;
     width: 60px;
     border-radius: var(--border-radius-10);
