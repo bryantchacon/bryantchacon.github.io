@@ -9,12 +9,13 @@
 :root {
     --primary-color: #1C1C28;
     --secondary-color: #28293D;
-    /* --primary-color: #111f3d; */
-    /* --secondary-color: #24385B; */
+    /* --primary-color: #111F3D; */
+    /* --secondary-color: #1B2C4C; */
     --tertiary-color: #8F90A6;
+    /* --tertiary-color: #8DA2C0; */
     
-    --text-color: #FAFAFC;
-    --hover-color: #0063F7;
+    --text-color: #FFFFFF;
+    --hover-color: #33B1FF;
     
     --display: inline-block;
 
@@ -84,11 +85,7 @@ html {
     margin-bottom: 50px;
 }
 
-.artstation-sections {
-    margin: 0 auto;
-}
-
-.artstation-sections__item{
+.artstation-sections__item {
     display: var(--display);
 }
 
@@ -112,7 +109,7 @@ html {
 
 .artstation-and-github-links {
     display: flex;    
-    max-width: 680px;
+    max-width: 690px;
     margin: 0 auto;
 }
 
