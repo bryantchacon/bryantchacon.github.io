@@ -107,26 +107,6 @@ html {
     font-size: var(--font-size-16);
 }
 
-.artstation-and-github-links {
-    display: flex;    
-    max-width: 690px;
-    margin: 0 auto;
-}
-
-.artstation, .github {
-    margin: 0 auto;
-}
-
-.artstation-and-github-links figure {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border-radius: 100%;
-}
-
-.artstation-and-github-links img {
-    width: 80px;
-}
-
 .checkbtn img, .github img, .cv img, .contact__item img {
     filter: invert(1);
 }
