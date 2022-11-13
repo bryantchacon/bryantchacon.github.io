@@ -7,33 +7,20 @@
 }
 
 :root {
-    --primary-color: #1C1C28;
-    --secondary-color: #28293D;
-    /* --primary-color: #111F3D; */
-    /* --secondary-color: #1B2C4C; */
-    --tertiary-color: #8F90A6;
-    /* --tertiary-color: #8DA2C0; */
-    
     --text-color: #FFFFFF;
     --hover-color: #33B1FF;
-    
     --display: inline-block;
-
-    --border-radius-10: 10px;
-
-    --font-size-16: 16px;
 }
 
 html {
-    background-color: var(--primary-color);
+    background-color: #1C1C28;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
 }
 
 .main-nav {
-    background-color: var(--secondary-color);
     text-align: right;
 }
 
@@ -47,7 +34,6 @@ html {
 }
 
 .main-nav__item a {
-    font-size: var(--font-size-16);
     color: var(--text-color);
 }
 
@@ -63,13 +49,13 @@ html {
     padding: 150px 0;
 }
 
-.name-and-description, .portfolio, .skills, .software, .cv, .contact {
+.name-and-description, .portfolio, .perfil, .about, .skills, .software, .cv, .social {
     margin-bottom: 60px;
 }
 
 .name {
     font-size: 50px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-weight: 700;
 }
 
@@ -82,7 +68,7 @@ html {
     font-size: 25px;
     font-weight: normal;
     padding-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .artstation-sections__item {
@@ -90,69 +76,35 @@ html {
 }
 
 .artstation-sections figure {
-    background-color: var(--secondary-color);
-    padding: 20px;
     margin: 0 10px;
-    margin-bottom: 30px;
-    border-radius: var(--border-radius-10);
 }
 
 .artstation-sections img {
-    width: 280px;
-    margin-bottom: 20px;
-    border-radius: var(--border-radius-10);
+    width: 300px;
+    padding-bottom: 15px;
 }
 
-.artstation-sections figcaption {
-    font-size: var(--font-size-16);
-}
-
-.artstation-and-github-links {
-    display: flex;    
-    max-width: 690px;
-    margin: 0 auto;
-}
-
-.artstation, .github {
-    margin: 0 auto;
-}
-
-.artstation-and-github-links figure {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border-radius: 100%;
-}
-
-.artstation-and-github-links img {
-    width: 80px;
-}
-
-.checkbtn img, .github img, .cv img, .contact__item img {
+.github img, .cv img, .social__item img {
     filter: invert(1);
 }
 
-.skills ul {
-    max-width: 700px;
+.cv img {
+    width: 256px;
+}
+
+.perfil p, .about p, .skills ul, .software ul {
+    max-width: 750px;
     margin: 0 auto;
 }
 
 .skills__item {
-    background-color: var(--secondary-color);
-    font-size: var(--font-size-16);
     padding: 16px;
-    margin: 0 10px;
-    margin-bottom: 20px;
-    border-radius: var(--border-radius-10);
+    margin: 0 10px 20px;
     display: var(--display);
 }
 
 .unity img, .zbrush img {
     background-color: var(--text-color);
-}
-
-.software ul {
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 .software__item {
@@ -164,31 +116,27 @@ html {
 .software__item img {
     padding: 3px;
     width: 60px;
-    border-radius: var(--border-radius-10);
+    border-radius: 5px;
 }
 
-.cv img {
-    width: 256px;
-}
-
-.contact__item {
+.social__item {
     display: var(--display);
     margin: 0 10px;
     margin-bottom: 10px;
 }
 
-.contact__item img {
+.social__item img {
     width: 30px;
 }
 
 footer {
-    background-color: var(--secondary-color);
     font-size: 14px;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 footer p {
-    color: var(--tertiary-color);
+    color: #8F90A6;
 }
 
 @media (max-width: 800px) {
@@ -199,6 +147,10 @@ footer p {
     .main-nav__item {
         padding-top: 0;
     }
+
+    .perfil p, .about p {
+        margin: 0 10px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -208,5 +160,11 @@ footer p {
 
     .main-nav:last-child {
         padding-right: 0;
+    }
+}
+
+@media (max-width: 1294px) {
+    .artstation-sections__item {
+        margin-bottom: 15px;
     }
 }
