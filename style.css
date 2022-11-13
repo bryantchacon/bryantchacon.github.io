@@ -143,11 +143,11 @@ footer p {
     .main-nav {
         padding-top: 20px;
     }
-
+    
     .main-nav__item {
         padding-top: 0;
     }
-
+    
     .perfil p, .about p {
         margin: 0 10px;
     }
@@ -157,7 +157,7 @@ footer p {
     .main-nav {
         text-align: center;
     }
-
+    
     .main-nav:last-child {
         padding-right: 0;
     }
@@ -165,6 +165,6 @@ footer p {
 
 @media (max-width: 1294px) {
     .artstation-sections__item {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 }
