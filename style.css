@@ -84,23 +84,23 @@ html {
     padding-bottom: 15px;
 }
 
-.github img, .cv img, .social__item img {
-    filter: invert(1);
-}
-
-.cv img {
-    width: 256px;
-}
-
 .perfil p, .about p, .skills ul, .software ul {
     max-width: 750px;
     margin: 0 auto;
+}
+
+.about p {
+    text-align: justify;
 }
 
 .skills__item {
     padding: 16px;
     margin: 0 10px 20px;
     display: var(--display);
+}
+
+.github img, .cv img, .social__item img {
+    filter: invert(1);
 }
 
 .unity img, .zbrush img {
@@ -117,6 +117,14 @@ html {
     padding: 3px;
     width: 60px;
     border-radius: 5px;
+}
+
+.software__item figcaption {
+    font-size: 16px;
+}
+
+.cv img {
+    width: 256px;
 }
 
 .social__item {
@@ -139,7 +147,7 @@ footer p {
     color: #8F90A6;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 559px) {
     .main-nav {
         padding-top: 20px;
     }
@@ -147,9 +155,17 @@ footer p {
     .main-nav__item {
         padding-top: 0;
     }
-    
-    .perfil p, .about p {
-        margin: 0 10px;
+}
+
+@media (max-width: 644px) {
+    .artstation-sections img {
+        width: 380px;
+    }
+}
+
+@media (max-width: 780px) {
+    .about p {
+        margin: 0 15px;
     }
 }
 
