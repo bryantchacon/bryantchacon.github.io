@@ -103,7 +103,7 @@ html {
     display: var(--display);
 }
 
-.github img, .cv img, .social__item img {
+.sphere_tracing img, .github img, .cv img, .social__item img {
     filter: invert(1);
 }
 
