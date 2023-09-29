@@ -71,6 +71,18 @@ html {
     margin-bottom: 40px;
 }
 
+.posts_tittle_text {
+    font-size: 40px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.posts ul {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
 .artstation-sections__item, .posts-sections__item {
     display: var(--display);
 }
@@ -79,13 +91,21 @@ html {
     margin: 0 10px;
 }
 
-.artstation-sections img, .posts-sections img {
+.artstation-sections img {
     width: 300px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
 }
 
 .posts-sections__item {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.posts-sections img {
+    width: 280px;
+    height: 210px;
+    border-radius: 3px;
+    margin-bottom: 15px;
 }
 
 .about p, .skills ul, .software ul {
@@ -162,8 +182,13 @@ footer p {
 }
 
 @media (max-width: 644px) {
-    .artstation-sections img, .posts-sections img {
+    .artstation-sections img {
         width: 380px;
+    }
+
+    .posts-sections img {
+        width: 420px;
+        height: 350px;
     }
 }
 
