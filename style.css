@@ -94,7 +94,7 @@ html {
 .artstation-sections img {
     width: 300px;
     margin-bottom: 15px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .posts-sections__item {
@@ -104,7 +104,7 @@ html {
 .posts-sections img {
     width: 280px;
     height: 210px;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
 
@@ -133,7 +133,7 @@ html {
 
 .software__item {
     margin: 0 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: var(--display);
 }
 
@@ -210,6 +210,6 @@ footer p {
 
 @media (max-width: 1294px) {
     .artstation-sections__item {
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
 }
