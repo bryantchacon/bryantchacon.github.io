@@ -46,22 +46,31 @@ html {
     background-repeat: no-repeat;
     background-position: center 0;
     text-shadow: 2px 2px 3px black;
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
-.name-and-description, .portfolio, .perfil, .about, .skills, .software, .cv, .social {
+.social__item {
+    display: var(--display);
+    margin: 0 10px;
+}
+
+.social__item img {
+    width: 25px;
+}
+
+.name-and-description, .portfolio, .perfil, .about, .skills, .software, .cv {
     margin-bottom: 60px;
 }
 
 .name {
     font-size: 50px;
-    padding-bottom: 10px;
     font-weight: 700;
 }
 
 .description {
-    font-size: 23px;
+    font-size: 25px;
     font-weight: normal;
+    padding-bottom: 30px;
 }
 
 .title {
@@ -149,16 +158,6 @@ html {
 
 .cv img {
     width: 256px;
-}
-
-.social__item {
-    display: var(--display);
-    margin: 0 10px;
-    margin-bottom: 10px;
-}
-
-.social__item img {
-    width: 30px;
 }
 
 footer {
