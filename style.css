@@ -39,6 +39,7 @@ html {
 
 .main-nav__item a:hover {
     color: var(--hover-color);
+    transition: color 0.3s;    
 }
 
 .name-and-description {
@@ -54,8 +55,15 @@ html {
     margin: 0 10px;
 }
 
-.social__item img {
-    width: 25px;
+.social__item a {
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+}
+
+.social__item a:hover {
+    color: var(--hover-color);
+    transition: color 0.3s;
 }
 
 .name-and-description, .portfolio, .perfil, .about, .skills, .software, .cv {
@@ -70,7 +78,7 @@ html {
 .description {
     font-size: 25px;
     font-weight: normal;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 .title {
