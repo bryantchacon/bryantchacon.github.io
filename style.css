@@ -43,7 +43,7 @@ html {
 }
 
 .name-and-description {
-    background-image: url(https://cdna.artstation.com/p/users/covers/000/872/214/default/f28c49b073f24c18760f17a1e3e57690.jpg);
+    background-image: url();
     background-repeat: no-repeat;
     background-position: center 0;
     text-shadow: 2px 2px 3px black;
@@ -88,41 +88,18 @@ html {
     margin-bottom: 40px;
 }
 
-.posts_tittle_text {
-    font-size: 40px;
-    padding-top: 20px;
-    margin-bottom: 40px;
-    font-weight: 700;
-}
-
-.posts ul {
-    max-width: 1270px;
-    margin: 0 auto;
-}
-
-.artstation-sections__item, .posts-sections__item {
+.projects-section__item {
     display: var(--display);
 }
 
-.artstation-sections figure, .posts-sections figure {
+.projects-section figure {
     margin: 0 10px;
 }
 
-.artstation-sections img {
+.projects-section img {
     width: 300px;
     margin-bottom: 15px;
     border-radius: 5px;
-}
-
-.posts-sections__item {
-    margin-bottom: 40px;
-}
-
-.posts-sections img {
-    width: 280px;
-    height: 210px;
-    border-radius: 5px;
-    margin-bottom: 15px;
 }
 
 .about p, .skills ul, .software ul {
@@ -140,7 +117,7 @@ html {
     display: var(--display);
 }
 
-.sphere_tracing img, .github img, .cv img, .social__item img {
+.express img, .cv img {
     filter: invert(1);
 }
 
@@ -156,12 +133,7 @@ html {
 
 .software__item img {
     padding: 3px;
-    width: 60px;
-    border-radius: 5px;
-}
-
-.software__item figcaption {
-    font-size: 16px;
+    height: 60px;
 }
 
 .cv img {
@@ -189,13 +161,8 @@ footer p {
 }
 
 @media (max-width: 644px) {
-    .artstation-sections img {
+    .projects-section img {
         width: 380px;
-    }
-
-    .posts-sections img {
-        width: 420px;
-        height: 350px;
     }
 }
 
@@ -216,7 +183,7 @@ footer p {
 }
 
 @media (max-width: 1294px) {
-    .artstation-sections__item {
+    .projects-section__item {
         margin-bottom: 35px;
     }
 }
