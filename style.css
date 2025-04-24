@@ -42,8 +42,16 @@ html {
     transition: color 0.3s;    
 }
 
-h1 {
+.name {
+    font-size: 50px;
+    font-weight: 700;
     padding-bottom: 5px;
+}
+
+.description {
+    font-size: 25px;
+    font-weight: normal;
+    padding-bottom: 25px;
 }
 
 .name-and-description {
@@ -72,17 +80,6 @@ h1 {
 
 .name-and-description, .portfolio, .perfil, .about, .skills, .software, .cv {
     margin-bottom: 60px;
-}
-
-.name {
-    font-size: 50px;
-    font-weight: 700;
-}
-
-.description {
-    font-size: 25px;
-    font-weight: normal;
-    padding-bottom: 25px;
 }
 
 .title {
