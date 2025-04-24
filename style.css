@@ -42,6 +42,10 @@ html {
     transition: color 0.3s;    
 }
 
+h1 {
+    padding-bottom: 5px;
+}
+
 .name-and-description {
     background-image: url();
     background-repeat: no-repeat;
@@ -102,13 +106,14 @@ html {
     border-radius: 5px;
 }
 
-.about p, .skills ul, .software ul {
-    max-width: 1000px;
+.about p {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.about p {
-    text-align: justify;
+.skills ul, .software ul {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .skills__item {
