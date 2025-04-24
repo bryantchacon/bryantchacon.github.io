@@ -103,7 +103,7 @@ html {
 }
 
 .about p, .skills ul, .software ul {
-    max-width: 750px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -134,10 +134,12 @@ html {
 .software__item img {
     padding: 3px;
     height: 60px;
+    width: auto;
 }
 
 .cv img {
     width: 256px;
+    height: auto;
 }
 
 footer {
