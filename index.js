@@ -8,3 +8,20 @@ async function loadFontAwesome() {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadFontAwesome();
 });
+
+async function loadImages() {
+    const imgs = document.querySelectorAll('#Software img, #CV img');
+    imgs.forEach(img => {
+        const src = img.getAttribute('src');
+        const newImg = new Image();
+        newImg.src = src;
+        newImg.onload = () => {
+            img.src = src;
+        };
+    });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadImages();
+});
+
