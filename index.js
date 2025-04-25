@@ -5,10 +5,6 @@ async function loadFontAwesome() {
     document.head.appendChild(link);
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
-    await loadFontAwesome();
-});
-
 async function loadImages() {
     const imgs = document.querySelectorAll('#Software img, #CV img');
     imgs.forEach(img => {
@@ -22,6 +18,6 @@ async function loadImages() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+    await loadFontAwesome();
     await loadImages();
 });
-
