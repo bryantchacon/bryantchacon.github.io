@@ -6,7 +6,7 @@ async function loadFontAwesome() {
 }
 
 async function loadImages() {
-    const imgs = document.querySelectorAll('#Software img, #CV img');
+    const imgs = document.querySelectorAll('#projects-section img, #Software img, #CV img');
     imgs.forEach(img => {
         const src = img.getAttribute('src');
         const newImg = new Image();
