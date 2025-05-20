@@ -18,8 +18,6 @@ async function loadImages() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const container = document.querySelector('.name');
-    container.textContent;
     await loadFontAwesome();
     await loadImages();
 });
