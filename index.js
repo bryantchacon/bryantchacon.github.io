@@ -20,6 +20,8 @@ async function loadImages() {
 document.addEventListener('DOMContentLoaded', async () => {
     const element = document.querySelector('.name-and-description');
     element.style.backgroundImage = 'url(https://png.pngtree.com/thumb_back/fh260/background/20211217/pngtree-1920-promotional-poster-background-image_923117.jpg)';
+    element.style.maskImage = 'linear-gradient(black 93%, transparent 100%)';
+
     await loadFontAwesome();
     await loadImages();
 });
