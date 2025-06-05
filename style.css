@@ -109,9 +109,9 @@ html {
     border-radius: 5px;
 }
 
-.about p, .software ul, .skills ul {
-    /* max-width: 800px; */
-}
+/* .about p, .software ul, .skills ul {
+    max-width: 800px;
+} */
 
 .about p {
     max-width: 800px;
