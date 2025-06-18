@@ -68,8 +68,6 @@ html {
 
 .name-and-description {
     margin: 130px 0;
-    /* background-size: cover;
-    background-position: center 0; */
 }
 
 .social ul {
@@ -170,17 +168,14 @@ html {
     display: var(--display1);
 }
 
-.express img, .github img {
-    /* filter: invert(1); */
-}
-
 footer {
     height: 60px;
-    font-size: 14px;
     align-content: center;
+    background-color: var(--background-color-2);
 }
 
 footer p {
+    font-size: 14px;
     color: var(--text-color);
 }
 
