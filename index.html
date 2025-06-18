@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#1C1C28" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#1C1C28" media="(prefers-color-scheme: dark)">
     <title>Bryant Chacón | Full Stack Developer</title>
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="https://img.icons8.com/?size=100&id=sGQ4JZXIk7ES&format=png&color=000000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="./index.js"></script>
@@ -20,16 +20,15 @@
             <ul class="main-nav">
                 <li class="main-nav__item"><a href="#Portfolio">Portfolio</a></li>
                 <li class="main-nav__item"><a href="#About">About</a></li>
-                <li class="main-nav__item"><a href="#Skills">Skills</a></li>
-                <li class="main-nav__item"><a href="#Software">Software</a></li>
-                <li class="main-nav__item"><a href="#CV">CV</a></li>
+                <li class="main-nav__item"><a href="#Stack">Stack</a></li>
             </ul>
         </nav>
-        <div class="name-and-description lazy-background">
+        <div class="name-and-description">
             <h1 class="name">Bryant Chacón</h1>
             <h2 class="description">Full Stack Developer</h2>
             <section id="Social" class="social">
                 <ul>
+                    <li class="social__item"><a href="https://github.com/bryantchacon/bryantchacon.github.io/blob/main/CV.pdf" target="_blank" aria-label="CV"><i class="fa-solid fa-file-lines"></i></a></li>
                     <li class="social__item"><a href="https://www.linkedin.com/in/bryantchacon/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
                     <li class="social__item"><a href="https://github.com/bryantchacon" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
                     <li class="social__item"><a href="https://x.com/bryantchacon_" target="_blank" aria-label="X-Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -41,96 +40,83 @@
     <main>
         <section id="Portfolio" class="portfolio">
             <h2 class="title">Portfolio</h2>
-            <ul class="projects-section">
-                <li class="projects-section__item"><figure><a href="" target="_blank"><img src="./images/image.png" alt=""></a><figcaption>Project 1</figcaption></figure></li>
-                <li class="projects-section__item"><figure><a href="" target="_blank"><img src="./images/image.png" alt=""></a><figcaption>Project 2</figcaption></figure></li>
-                <li class="projects-section__item"><figure><a href="" target="_blank"><img src="./images/image.png" alt=""></a><figcaption>Project 3</figcaption></figure></li>
-                <li class="projects-section__item"><figure><a href="" target="_blank"><img src="./images/image.png" alt=""></a><figcaption>Project 4</figcaption></figure></li>
+            <ul class="portfolio-projects">
+                <li class="portfolio-projects__item"><figure><a href="" target="_blank"><img src="./images/image.png"></a><figcaption>Project 1</figcaption></figure></li>
+                <li class="portfolio-projects__item"><figure><a href="" target="_blank"><img src="./images/image.png"></a><figcaption>Project 2</figcaption></figure></li>
+                <li class="portfolio-projects__item"><figure><a href="" target="_blank"><img src="./images/image.png"></a><figcaption>Project 3</figcaption></figure></li>
+                <li class="portfolio-projects__item"><figure><a href="" target="_blank"><img src="./images/image.png"></a><figcaption>Project 4</figcaption></figure></li>
             </ul>
         </section>
         <section id="About" class="about">
             <h2 class="title">About</h2>
             <p>
-                I'm a Full Stack Developer with solid knowledge of the JavaScript ecosystem. My technical expertise spans front-end development with HTML, CSS, and React JS powered by Vite.js and styled with Tailwind CSS. On the back end, I work with Express.js on Node.js, implementing PostgreSQL databases and authentication using Passport.js and JWT. I manage my projects using version control with Git and GitHub.
+                I'm a self-taught Full Stack Developer with a strong foundation in the JavaScript ecosystem. I build responsive user interfaces using HTML, CSS, and React JS with Vite.js, styled with Tailwind CSS for modern and clean designs. On the server side, I use Node.js with Express.js to create scalable APIs, integrate PostgreSQL databases, and implement secure authentication with Passport.js and JWT. I also work with Git and GitHub to keep my code organized and versioned.
             </p>
             <br>
             <p>
-                Passionate about creating complete and functional web solutions, combining attractive user interfaces with robust back-end architectures. Always looking for new challenges that allow me to continue growing as a developer and add value through modern and efficient web applications.
+                Passionate about learning new technologies and applying best practices to build efficient and well-structured web applications. I enjoy turning ideas into functional, user-friendly digital experiences and am constantly exploring ways to improve and grow as a developer.
             </p>
         </section>
-        <section id="Software" class="software">
-            <h2 class="title">Software</h2>
+        <section id="Stack" class="stack">
+            <h2 class="title">Stack</h2>
             <div>
                 <ul>
-                    <li>Frontend</li>
-                    <li class="software__item"><figure class="html"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML"></figure></li>
-                    <li class="software__item"><figure class="css"><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS"></figure></li>
-                    <li class="software__item"><figure class="js"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS"></figure></li>
-                    <li class="software__item"><figure class="react"><img src="https://static-00.iconduck.com/assets.00/react-icon-512x456-2ynx529a.png" alt="React JS"></figure></li>
-                    <li class="software__item"><figure class="vitejs"><img src="https://vite.dev/logo.svg" alt="Vite.js"></figure></li>
-                    <li class="software__item"><figure class="tailwindcss"><img src="https://mwop.net/images/tailwindcss.svg" alt="Tailwind CSS"></figure></li>
-                </ul>
-
-                <ul>
-                    <li>Backend</li>
-                    <li class="software__item"><figure class="node"><img src="https://cdn-icons-png.flaticon.com/512/15484/15484303.png" alt="Node.js"></figure></li>
-                    <li class="software__item"><figure class="postgresql"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL"></figure></li>
-                    <li class="software__item"><figure class="express"><img src="https://static-00.iconduck.com/assets.00/express-icon-512x149-5vvy3bbh.png" alt="Express.js"></figure></li>
-                </ul>
-
-                <ul>
-                    <li>Authentication</li>
-                    <li class="software__item"><figure class="passport"><img src="https://www.passportjs.org/images/logo.svg" alt="Passport.js"></figure></li>
-                    <li class="software__item"><figure class="jwt"><img src="https://jwt.io/img/logo.svg" alt="JWT"></figure></li>
-                </ul>
-
-                <ul>
-                    <li>Version Control</li>
-                    <li class="software__item"><figure class="git"><img src="https://static-00.iconduck.com/assets.00/git-icon-512x512-61zfmvxk.png" alt="Git"></figure></li>
-                    <li class="software__item"><figure class="github"><img src="https://static-00.iconduck.com/assets.00/github-icon-512x497-oppthre2.png" alt="GitHub"></figure></li>
+                    <li class="stack__item"><figure class="html"><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"><figcaption>HTML</figcaption></figure></li>
+                    <li class="stack__item"><figure class="css"><img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"><figcaption>CSS</figcaption></figure></li>
+                    <li class="stack__item"><figure class="js"><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"><figcaption>JS</figcaption></figure></li>
+                    <li class="stack__item"><figure class="react"><img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"><figcaption>React</figcaption></figure></li>
+                    <li class="stack__item"><figure class="vitejs"><img src="https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000"><figcaption>Vite</figcaption></figure></li>
+                    <li class="stack__item"><figure class="tailwindcss"><img src="https://mwop.net/images/tailwindcss.svg"><figcaption>Tailwind</figcaption></figure></li>
+                    <li class="stack__item"><figure class="node"><img src="https://cdn-icons-png.flaticon.com/512/15484/15484303.png"><figcaption>Node</figcaption></figure></li>
+                    <li class="stack__item"><figure class="express"><img src="https://img.icons8.com/?size=100&id=SDVmtZ6VBGXt&format=png&color=000000"><figcaption>Express</figcaption></figure></li>
+                    <li class="stack__item"><figure class="postgresql"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png"><figcaption>PostgreSQL</figcaption></figure></li>
+                    <li class="stack__item"><figure class="passport"><img src="https://www.passportjs.org/images/logo.svg"><figcaption>Passport</figcaption></figure></li>
+                    <li class="stack__item"><figure class="jwt"><img src="https://jwt.io/img/pic_logo.svg"><figcaption>JWT</figcaption></figure></li>
+                    <li class="stack__item"><figure class="git"><img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000"><figcaption>Git</figcaption></figure></li>
+                    <li class="stack__item"><figure class="github"><img src="https://img.icons8.com/?size=100&id=16318&format=png&color=000000"><figcaption>GitHub</figcaption></figure></li>
                 </ul>
             </div>
         </section>
-        <section id="Skills" class="skills">
+        <!-- <section id="Skills" class="skills">
             <h2 class="title">Skills</h2>
             <ul>
                 <li class="skills__item">Web semantics</li>
                 <li class="skills__item">Responsive design</li>
                 <li class="skills__item">Flexbox and Grid</li>
-                <!-- <li class="skills__item">Web accessibility (a11y)</li> -->
+            <li class="skills__item">Web accessibility (a11y)</li>
                 <li class="skills__item">Performance optimization</li>
                 <li class="skills__item">SEO</li>
-                <!-- <li class="skills__item">CSS animations</li> -->
+            <li class="skills__item">CSS animations</li>
                 <li class="skills__item">DOM manipulation</li>
                 <li class="skills__item">Events and listeners</li>
-                <!-- <li class="skills__item">Destructuring and spread operators</li> -->
+            <li class="skills__item">Destructuring and spread operators</li>
                 <li class="skills__item">Async/Await and Promises</li>
                 <li class="skills__item">Error handling</li>
-                <!-- <li class="skills__item">Complex conditional logic</li> -->
+            <li class="skills__item">Complex conditional logic</li>
                 <li class="skills__item">Custom hooks</li>
                 <li class="skills__item">States and props</li>
-                <!-- <li class="skills__item">Component lifecycle</li> -->
-                <!-- <li class="skills__item">Context API</li> -->
-                <!-- <li class="skills__item">Dynamic routing</li> -->
+            <li class="skills__item">Component lifecycle</li>
+            <li class="skills__item">Context API</li>
+            <li class="skills__item">Dynamic routing</li>
                 <li class="skills__item">REST API consumption</li>
-                <!-- <li class="skills__item">Optimization with memorization</li> -->
+            <li class="skills__item">Optimization with memorization</li>
                 <li class="skills__item">Basic and advanced queries</li>
                 <li class="skills__item">CRUD operations</li>
                 <li class="skills__item">Database normalization</li>
                 <li class="skills__item">Joins and subqueries</li>
                 <li class="skills__item">Relational schema design</li>
-                <!-- <li class="skills__item">Stored procedures</li> -->
-                <!-- <li class="skills__item">Routes and controllers</li> -->
+            <li class="skills__item">Stored procedures</li>
+            <li class="skills__item">Routes and controllers</li>
                 <li class="skills__item">Middleware creation</li>
                 <li class="skills__item">ORM Integration</li>
                 <li class="skills__item">Dependency management</li>
                 <li class="skills__item">Database connection</li>
-                <!-- <li class="skills__item">MVC structure</li> -->
+            <li class="skills__item">MVC structure</li>
                 <li class="skills__item">Data validation</li>
                 <li class="skills__item">Token-based authentication</li>
                 <li class="skills__item">Route protection</li>
                 <li class="skills__item">Session management</li>
-                <!-- <li class="skills__item">OAuth integration</li> -->
+            <li class="skills__item">OAuth integration</li>
                 <li class="skills__item">Password encryption</li>
                 <li class="skills__item">Role and permission management</li>
                 <li class="skills__item">Version control</li>
@@ -140,11 +126,7 @@
                 <li class="skills__item">Pull requests and reviews</li>
                 <li class="skills__item">Gitflow workflow</li>
             </ul>
-        </section>
-        <section id="CV" class="cv">
-            <h2 class="title">CV</h2>
-            <figure><a href="https://github.com/bryantchacon/bryantchacon.github.io/blob/main/CV.pdf" target="_blank"><img src="./images/cv_image.png" alt="CV"></a></figure>
-        </section>
+        </section> -->
     </main>
     <footer>
         <p>© 2025 Bryant Chacón</p>
