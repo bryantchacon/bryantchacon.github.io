@@ -185,7 +185,7 @@ footer p {
     }
 }
 
-@media (max-width: 909px) {
+@media (max-width: 910px) {
     .main-nav {
         text-align: center;
     }
@@ -203,8 +203,12 @@ footer p {
     
 }
 
-@media (max-width: 1214px) {
-    .portfolio-projects img {
-        margin-top: 15px;
+@media (max-width: 1134px) {
+    .portfolio-projects li {
+        margin-bottom: 15px;
+    }
+
+    .portfolio {
+        margin-bottom: 85px;
     }
 }
