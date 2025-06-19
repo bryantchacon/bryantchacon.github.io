@@ -118,19 +118,18 @@ html {
 }
 
 .portfolio-projects img:hover {
-    /* padding: 5px; */
-    /* border: 5px solid rgba(255, 255, 255, 0.3); */
-    background: linear-gradient(360deg, #33B1FF, #FF3CAC, #784BA0, #33B1FF);
-    animation: spin-border 2s linear infinite;
-    /* transform: rotate(0deg); */
+    background: linear-gradient(90deg, #3399ff, #ff66cc, #3399ff, #ff66cc);
+    /* background: conic-gradient(from 0deg, #33B1FF, #FF3CAC, #784BA0, #33B1FF); */
+    background-size: 300% 100%;
+    animation: animate-border 2s linear infinite;
 }
 
-@keyframes spin-border {
-    0% {
-        filter: hue-rotate(0deg);
+@keyframes animate-border {
+    from {
+        background-position: 100% 50%;
     }
-    100% {
-        filter: hue-rotate(360deg);
+    to {
+        background-position: 0% 50%;
     }
 }
 
