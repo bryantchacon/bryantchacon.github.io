@@ -45,11 +45,11 @@ html {
     padding-right: 20px;
 }
 
-.main-nav__item a {
+.main-nav a {
     color: var(--background-color-1);
 }
 
-.main-nav__item a:hover {
+.main-nav a:hover {
     color: var(--hover-color);
     transition: color 0.2s;
 }
@@ -57,13 +57,11 @@ html {
 .name {
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 5px;
 }
 
 .description {
-    font-size: 25px;
     font-weight: normal;
-    margin-bottom: var(--cristal-radius);
+    margin-bottom: 30px;
 }
 
 .name-and-description {
@@ -92,7 +90,7 @@ html {
 .social__item:nth-child(4) i { color: #14171a; }
 .social__item:nth-child(5) i { color: #7cbb00; }
 
-.social__item i:hover {
+.social i:hover {
     transform: scale(1.2);
 }
 
@@ -113,15 +111,14 @@ html {
 .portfolio-projects img {
     width: 280px;
     height: auto;
-    border-radius: 30px;
+    border-radius: var(--cristal-radius);
     padding: 5px;
 }
 
 .portfolio-projects img:hover {
-    background: linear-gradient(90deg, #3399ff, #ff66cc, #3399ff, #ff66cc);
-    /* background: conic-gradient(from 0deg, #33B1FF, #FF3CAC, #784BA0, #33B1FF); */
+    background: linear-gradient(90deg, #45a2ff, #ffc5ec, #45a2ff, #ffc5ec);
     background-size: 300% 100%;
-    animation: animate-border 2s linear infinite;
+    animation: animate-border 1s linear infinite;
 }
 
 @keyframes animate-border {
@@ -146,25 +143,14 @@ html {
 }
 
 .stack__item {
-    margin: 30px;
     display: var(--display1);
+    margin: 30px;
 }
 
 .stack__item img {
     height: 60px;
     aspect-ratio: 1 / 1;
     object-fit: contain;
-}
-
-.skills ul {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 50px;
-}
-
-.skills__item {
-    padding: 16px;
-    display: var(--display1);
 }
 
 footer {
@@ -178,13 +164,13 @@ footer p {
     color: var(--text-color);
 }
 
-@media (max-width: 604px) {
+@media (max-width: 600px) {
     .portfolio-projects img {
-        width: 320px;
+        width: 350px;
     }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 900px) {
     .main-nav {
         text-align: center;
     }
@@ -204,10 +190,10 @@ footer p {
 
 @media (max-width: 1134px) {
     .portfolio-projects li {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .portfolio {
-        margin-bottom: 85px;
+        margin-bottom: 80px;
     }
 }

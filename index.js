@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadFontAwesome();
 });
 
-document.querySelectorAll('.portfolio-projects img').forEach(el => {
+document.querySelectorAll('.main-nav a, .social i, .portfolio-projects img').forEach(el => {
     el.addEventListener('touchstart', () => {
         el.classList.add('hover');
     });
