@@ -25,7 +25,7 @@ html {
     /* background-color: var(--background-color-2); */
     font-family: 'Open Sans', sans-serif;
     color: var(--background-color-2);
-    font-size: 17px;
+    font-size: 18px;
     text-align: center;
     /* display: var(--display2); */
     /* justify-content: center; */
@@ -37,6 +37,7 @@ html {
 }
 
 .main-nav__item {
+    font-weight: 300;
     display: var(--display1);
     padding: 20px 20px;
 }
@@ -143,6 +144,7 @@ html {
 }
 
 .stack__item {
+    font-size: 16px;
     display: var(--display1);
     margin: 30px;
 }
