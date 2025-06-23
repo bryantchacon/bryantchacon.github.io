@@ -7,13 +7,13 @@
 }
 
 :root {
-    --text-color: #8F90A6;
-    --background-color-1: #ECECEC;
-    --background-color-2: #1C1C28;
+    --color-1: #1C1C28;
+    --color-2: #ECECEC;
+    --color-3: #8F90A6;
     --hover-color: #1da1f2;
-    --display1: inline-block;
-    --display2: flex;
-    --display3: grid;
+    --display-1: inline-block;
+    --display-2: flex;
+    --display-3: grid;
     --cristal-bg: rgba(255, 255, 255, 0.2);
     --cristal-blur: blur(10px);
     --cristal-radius: 30px;
@@ -22,14 +22,14 @@
 }
 
 html {
-    background-color: var(--background-color-1);
-    /* background-color: var(--background-color-2); */
+    background-color: var(--color-2);
+    /* background-color: var(--color-1); */
     /* background: linear-gradient(135deg, #2b2e4a, #e84545); */
     font-family: 'Open Sans', sans-serif;
-    color: var(--background-color-2);
+    color: var(--color-1);
     font-size: 18px;
     text-align: center;
-    /* display: var(--display2); */
+    /* display: var(--display-2); */
     /* justify-content: center; */
 }
 
@@ -38,7 +38,7 @@ html {
     top: 0;
     width: 100%;
     text-align: right;
-    /* background-color: var(--background-color-2); */
+    /* background-color: var(--color-1); */
     background-color: var(--cristal-bg);
     backdrop-filter: var(--cristal-blur);
     border-bottom: var(--cristal-border);
@@ -48,7 +48,7 @@ html {
 
 .main-nav__item {
     /* font-weight: 300; */
-    display: var(--display1);
+    display: var(--display-1);
     padding: 20px 20px;
 }
 
@@ -57,7 +57,7 @@ html {
 }
 
 .main-nav a {
-    color: var(--background-color-2);
+    color: var(--color-1);
 }
 
 .main-nav a:hover {
@@ -90,7 +90,7 @@ html {
 }
 
 .social__item {
-    display: var(--display1);
+    display: var(--display-1);
     font-size: 25px;
     margin: 0 10px;
 }
@@ -116,7 +116,7 @@ html {
 }
 
 .portfolio-projects__item {
-    display: var(--display1);
+    display: var(--display-1);
 }
 
 .portfolio-projects img {
@@ -159,7 +159,7 @@ html {
 
 .stack__item {
     font-size: 16px;
-    display: var(--display1);
+    display: var(--display-1);
     margin: 30px;
 }
 
@@ -172,7 +172,7 @@ html {
 footer {
     height: 60px;
     align-content: center;
-    /* background-color: var(--background-color-2); */
+    /* background-color: var(--color-1); */
     background-color: var(--cristal-bg);
     backdrop-filter: var(--cristal-blur);
     border-top: var(--cristal-border);
@@ -181,7 +181,7 @@ footer {
 
 footer p {
     font-size: 14px;
-    color: var(--text-color);
+    color: var(--color-3);
 }
 
 @media (max-width: 600px) {

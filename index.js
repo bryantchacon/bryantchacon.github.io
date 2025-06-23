@@ -1,3 +1,10 @@
+async function loadFont() {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap';
+    document.head.appendChild(link);
+}
+
 async function loadFontAwesome() {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
@@ -6,6 +13,7 @@ async function loadFontAwesome() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+    await loadFont();
     await loadFontAwesome();
 });
 
