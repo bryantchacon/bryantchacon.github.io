@@ -14,10 +14,10 @@
     --display-1: inline-block;
     --display-2: flex;
     --display-3: grid;
-    --cristal-bg: rgba(255, 255, 255, 0.2);
+    --cristal-bg: rgba(255, 255, 255, 0.5);
     --cristal-blur: blur(10px);
     --cristal-radius: 30px;
-    --cristal-border: 1px solid rgba(255, 255, 255, 0.3);
+    --cristal-border: 1px solid rgba(255, 255, 255, 0.8);
     --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
