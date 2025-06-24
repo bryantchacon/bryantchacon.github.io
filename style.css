@@ -18,19 +18,14 @@
     --cristal-blur: blur(10px);
     --cristal-radius: 30px;
     --cristal-border: 1px solid rgba(255, 255, 255, 0.8);
-    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 html {
     background-color: var(--color-2);
-    /* background-color: var(--color-1); */
-    /* background: linear-gradient(135deg, #2b2e4a, #e84545); */
     font-family: 'Open Sans', sans-serif;
     color: var(--color-1);
     font-size: 18px;
     text-align: center;
-    /* display: var(--display-2); */
-    /* justify-content: center; */
 }
 
 .main-nav {
@@ -38,16 +33,13 @@ html {
     top: 0;
     width: 100%;
     text-align: right;
-    /* background-color: var(--color-1); */
     background-color: var(--cristal-bg);
     backdrop-filter: var(--cristal-blur);
     border-bottom: var(--cristal-border);
-    box-shadow: var(--box-shadow);
     z-index: 1;
 }
 
 .main-nav__item {
-    /* font-weight: 300; */
     display: var(--display-1);
     padding: 20px 20px;
 }
@@ -172,11 +164,9 @@ html {
 footer {
     height: 60px;
     align-content: center;
-    /* background-color: var(--color-1); */
     background-color: var(--cristal-bg);
     backdrop-filter: var(--cristal-blur);
     border-top: var(--cristal-border);
-    box-shadow: var(--box-shadow);
 }
 
 footer p {
