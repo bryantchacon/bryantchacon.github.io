@@ -14,10 +14,10 @@
     --display-1: inline-block;
     --display-2: flex;
     --display-3: grid;
-    --cristal-bg: rgba(255, 255, 255, 0.5);
+    --cristal-bg: rgba(255, 255, 255, 0.7);
     --cristal-blur: blur(10px);
     --cristal-radius: 30px;
-    --cristal-border: 1px solid rgba(255, 255, 255, 0.8);
+    --cristal-border: 2px solid rgba(255, 255, 255, 1);
 }
 
 html {
@@ -152,7 +152,7 @@ html {
 .stack__item {
     font-size: 16px;
     display: var(--display-1);
-    margin: 30px;
+    margin: 25px;
 }
 
 .stack__item img {
@@ -164,9 +164,9 @@ html {
 footer {
     height: 60px;
     align-content: center;
-    background-color: var(--cristal-bg);
+    /* background-color: var(--cristal-bg);
     backdrop-filter: var(--cristal-blur);
-    border-top: var(--cristal-border);
+    border-top: var(--cristal-border); */
 }
 
 footer p {
