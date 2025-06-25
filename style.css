@@ -11,9 +11,7 @@
     --color-2: #ECECEC;
     --color-3: #8F90A6;
     --hover-color: #1da1f2;
-    --display-1: inline-block;
-    --display-2: flex;
-    --display-3: grid;
+    --display: inline-block;
     --cristal-bg: rgba(255, 255, 255, 0.7);
     --cristal-blur: blur(10px);
     --cristal-radius: 30px;
@@ -29,8 +27,6 @@ html {
 }
 
 .main-nav {
-    position: fixed;
-    top: 0;
     width: 100%;
     text-align: right;
     background-color: var(--cristal-bg);
@@ -40,7 +36,7 @@ html {
 }
 
 .main-nav__item {
-    display: var(--display-1);
+    display: var(--display);
     padding: 20px 20px;
 }
 
@@ -68,7 +64,7 @@ html {
 }
 
 .name-and-description {
-    margin: 194px 0 130px;
+    margin: 130px 0;
 }
 
 .social ul {
@@ -82,7 +78,7 @@ html {
 }
 
 .social__item {
-    display: var(--display-1);
+    display: var(--display);
     font-size: 25px;
     margin: 0 10px;
 }
@@ -108,7 +104,7 @@ html {
 }
 
 .portfolio-projects__item {
-    display: var(--display-1);
+    display: var(--display);
 }
 
 .portfolio-projects img {
@@ -151,7 +147,7 @@ html {
 
 .stack__item {
     font-size: 16px;
-    display: var(--display-1);
+    display: var(--display);
     margin: 25px;
 }
 
@@ -164,9 +160,6 @@ html {
 footer {
     height: 60px;
     align-content: center;
-    /* background-color: var(--cristal-bg);
-    backdrop-filter: var(--cristal-blur);
-    border-top: var(--cristal-border); */
 }
 
 footer p {
