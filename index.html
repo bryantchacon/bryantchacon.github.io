@@ -14,16 +14,17 @@
 
 <body>
     <header>
-        <nav>
-            <ul class="main-nav">
-                <div class="letter">
-                    <p><a href="https://www.bryantchacon.com/"><img src="https://img.icons8.com/?size=100&id=111063&format=png&color=FFFFFF" alt="B logo" width="24" height="24"></a></p>
-                </div>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="#Portfolio">Portfolio</a></li>
-                    <li class="main-nav__item"><a href="#About">About</a></li>
-                    <li class="main-nav__item"><a href="#Stack">Stack</a></li>
-                </ul>
+        <nav class="main-nav">
+            <div class="letter">
+                <p><a href="https://www.bryantchacon.com/"><img src="https://img.icons8.com/?size=100&id=111063&format=png&color=FFFFFF" alt="B logo" width="24" height="24"></a></p>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#Portfolio">Portfolio</a></li>
+                <li class="main-nav__item"><a href="#About">About</a></li>
+                <li class="main-nav__item"><a href="#Stack">Stack</a></li>
             </ul>
         </nav>
         <div class="name-and-description">
@@ -62,24 +63,22 @@
         </section>
         <section id="Stack" class="stack">
             <h3 class="title stack-title">Stack</h3>
-            <div>
-                <ul>
-                    <li class="stack__item"><figure class="html"><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML logo" loading="lazy"><figcaption>HTML</figcaption></figure></li>
-                    <li class="stack__item"><figure class="css"><img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS logo" loading="lazy"><figcaption>CSS</figcaption></figure></li>
-                    <li class="stack__item"><figure class="js"><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JS logo" loading="lazy"><figcaption>JS</figcaption></figure></li>
-                    <li class="stack__item"><figure class="react"><img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" alt="React logo" loading="lazy"><figcaption>React</figcaption></figure></li>
-                    <li class="stack__item"><figure class="vitejs"><img src="https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000" alt="Vite logo" loading="lazy"><figcaption>Vite</figcaption></figure></li>
-                    <li class="stack__item"><figure class="tailwindcss"><img src="https://mwop.net/images/tailwindcss.svg" alt="Tailwind logo" loading="lazy"><figcaption>Tailwind</figcaption></figure></li>
-                    <li class="stack__item"><figure class="node"><img src="https://cdn-icons-png.flaticon.com/512/15484/15484303.png" alt="Node logo" loading="lazy"><figcaption>Node</figcaption></figure></li>
-                    <li class="stack__item"><figure class="express"><img src="https://img.icons8.com/?size=100&id=SDVmtZ6VBGXt&format=png&color=000000" alt="Express logo" loading="lazy"><figcaption>Express</figcaption></figure></li>
-                    <li class="stack__item"><figure class="docker"><img src="https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000" alt="Docker logo" loading="lazy"><figcaption>Docker</figcaption></figure></li>
-                    <li class="stack__item"><figure class="postgresql"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL logo" loading="lazy"><figcaption>PostgreSQL</figcaption></figure></li>
-                    <li class="stack__item"><figure class="passport"><img src="https://www.passportjs.org/images/logo.svg" alt="Passport logo" loading="lazy"><figcaption>Passport</figcaption></figure></li>
-                    <li class="stack__item"><figure class="jwt"><img src="https://jwt.io/img/pic_logo.svg" alt="JWT logo" loading="lazy"><figcaption>JWT</figcaption></figure></li>
-                    <li class="stack__item"><figure class="git"><img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="Git logo" loading="lazy"><figcaption>Git</figcaption></figure></li>
-                    <li class="stack__item"><figure class="github"><img src="https://img.icons8.com/?size=100&id=16318&format=png&color=000000" alt="GitHub logo" loading="lazy"><figcaption>GitHub</figcaption></figure></li>
-                </ul>
-            </div>
+            <ul>
+                <li class="stack__item"><figure class="html"><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML logo" loading="lazy"><figcaption>HTML</figcaption></figure></li>
+                <li class="stack__item"><figure class="css"><img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS logo" loading="lazy"><figcaption>CSS</figcaption></figure></li>
+                <li class="stack__item"><figure class="js"><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JS logo" loading="lazy"><figcaption>JS</figcaption></figure></li>
+                <li class="stack__item"><figure class="react"><img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" alt="React logo" loading="lazy"><figcaption>React</figcaption></figure></li>
+                <li class="stack__item"><figure class="vitejs"><img src="https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000" alt="Vite logo" loading="lazy"><figcaption>Vite</figcaption></figure></li>
+                <li class="stack__item"><figure class="tailwindcss"><img src="https://mwop.net/images/tailwindcss.svg" alt="Tailwind logo" loading="lazy"><figcaption>Tailwind</figcaption></figure></li>
+                <li class="stack__item"><figure class="node"><img src="https://cdn-icons-png.flaticon.com/512/15484/15484303.png" alt="Node logo" loading="lazy"><figcaption>Node</figcaption></figure></li>
+                <li class="stack__item"><figure class="express"><img src="https://img.icons8.com/?size=100&id=SDVmtZ6VBGXt&format=png&color=000000" alt="Express logo" loading="lazy"><figcaption>Express</figcaption></figure></li>
+                <li class="stack__item"><figure class="docker"><img src="https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000" alt="Docker logo" loading="lazy"><figcaption>Docker</figcaption></figure></li>
+                <li class="stack__item"><figure class="postgresql"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL logo" loading="lazy"><figcaption>PostgreSQL</figcaption></figure></li>
+                <li class="stack__item"><figure class="passport"><img src="https://www.passportjs.org/images/logo.svg" alt="Passport logo" loading="lazy"><figcaption>Passport</figcaption></figure></li>
+                <li class="stack__item"><figure class="jwt"><img src="https://jwt.io/img/pic_logo.svg" alt="JWT logo" loading="lazy"><figcaption>JWT</figcaption></figure></li>
+                <li class="stack__item"><figure class="git"><img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="Git logo" loading="lazy"><figcaption>Git</figcaption></figure></li>
+                <li class="stack__item"><figure class="github"><img src="https://img.icons8.com/?size=100&id=16318&format=png&color=000000" alt="GitHub logo" loading="lazy"><figcaption>GitHub</figcaption></figure></li>
+            </ul>
         </section>
     </main>
     <footer>

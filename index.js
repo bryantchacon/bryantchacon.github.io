@@ -8,13 +8,23 @@ async function loadFont() {
 async function loadFontAwesome() {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css';
+    link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css';
     document.head.appendChild(link);
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
     await loadFont();
     await loadFontAwesome();
+
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.main-nav__list');
+    const icon = hamburger.querySelector('i');
+
+    hamburger.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
 });
 
 document.querySelectorAll('.main-nav a, .social i, .portfolio-projects img').forEach(el => {
