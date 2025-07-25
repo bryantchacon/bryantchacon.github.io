@@ -199,7 +199,6 @@ footer p {
 @media (max-width: 850px) {
     .letter a {
         display: flex;
-        padding-left: 30px;
     }
 
     .hamburger {
@@ -209,13 +208,12 @@ footer p {
         font-size: 25px;
         color: var(--color-2);
         cursor: pointer;
-        padding-right: 30px;
     }
 
     .main-nav {
         display: flex;
         justify-content: space-between;
-        padding-right: 0;
+        padding: 0 15px;
         align-items: center;
     }
 
@@ -227,7 +225,7 @@ footer p {
         background-color: var(--color-1);
         right: 0;
         padding: 0 15px 15px 15px;
-        border-radius: 0 0 0 var(--cristal-radius);
+        border-radius: 8px 0 8px 8px;
     }
 
     .main-nav__list.active {
@@ -239,7 +237,7 @@ footer p {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
     .about p, .stack ul {
         margin: 0 30px;
     }
