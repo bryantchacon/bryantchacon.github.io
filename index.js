@@ -20,14 +20,45 @@ document.addEventListener('DOMContentLoaded', async () => {
     const navList = document.querySelector('.main-nav__list');
     const icon = hamburger.querySelector('i');
 
+    const isMenuOpen = () => navList.classList.contains('active');
+
+    const openMenu = () => {
+        navList.classList.add('active');
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+    };
+
+    const closeMenu = () => {
+        navList.classList.remove('active');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-xmark');
+    };
+
     hamburger.addEventListener('click', () => {
-        navList.classList.toggle('active');
-        icon.classList.toggle('fa-bars');
-        icon.classList.toggle('fa-xmark');
+        isMenuOpen() ? closeMenu() : openMenu();
+    });
+
+    document.querySelectorAll('.main-nav__item a').forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        const clickedOutside = !navList.contains(e.target) && !hamburger.contains(e.target);
+        if (isMenuOpen() && clickedOutside) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isMenuOpen()) {
+            closeMenu();
+        }
     });
 });
 
-document.querySelectorAll('.main-nav a, .social i, .portfolio-projects img').forEach(el => {
+document.querySelectorAll('.portfolio-projects img').forEach(el => {
     el.addEventListener('touchstart', () => {
         el.classList.add('hover');
     });
