@@ -27,7 +27,7 @@ html {
     text-align: center;
 }
 
-.letter a {
+.code-logo a {
     display: none;
 }
 
@@ -101,7 +101,7 @@ html {
 .social__item:nth-child(5) i { color: #7cbb00; }
 
 .social i:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .portfolio, .about, .stack {
@@ -197,8 +197,9 @@ footer p {
 }
 
 @media (max-width: 850px) {
-    .letter a {
+    .code-logo a {
         display: flex;
+        filter: invert(1);
     }
 
     .hamburger {
