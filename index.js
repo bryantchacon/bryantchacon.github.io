@@ -57,12 +57,3 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 });
-
-document.querySelectorAll('.portfolio-projects img').forEach(el => {
-    el.addEventListener('touchstart', () => {
-        el.classList.add('hover');
-    });
-    el.addEventListener('touchend', () => {
-        setTimeout(() => el.classList.remove('hover'), 300);
-    });
-});

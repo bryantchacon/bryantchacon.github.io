@@ -225,7 +225,7 @@ footer p {
         top: var(--nav-height);
         background-color: var(--color-1);
         right: 0;
-        padding: 0 15px 15px 15px;
+        padding: 0 15px;
         border-radius: 8px 0 8px 8px;
     }
 
