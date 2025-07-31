@@ -246,10 +246,10 @@ footer p {
 
 @media (max-width: 1134px) {
     .portfolio {
-        margin-bottom: 80px;
+        margin-bottom: 70px;
     }
 
     .portfolio-projects li {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 }
