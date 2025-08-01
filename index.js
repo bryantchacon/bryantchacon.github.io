@@ -12,7 +12,7 @@ async function loadFontAwesome() {
     document.head.appendChild(link);
 }
 
-async function hamburger() {
+async function hamburgerMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navList = document.querySelector('.main-nav__list');
     const icon = hamburger.querySelector('i');
@@ -58,5 +58,5 @@ async function hamburger() {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadFont();
     await loadFontAwesome();
-    await hamburger();
+    await hamburgerMenu();
 });
