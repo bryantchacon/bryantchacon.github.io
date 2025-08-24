@@ -27,8 +27,15 @@ html {
     text-align: center;
 }
 
-.code-logo a {
-    display: none;
+.name {
+    color: var(--color-2);
+    font-size: 20px;
+}
+
+.description {
+    color: var(--color-2);
+    font-size: 15px;
+    font-weight: normal;
 }
 
 .hamburger {
@@ -37,16 +44,15 @@ html {
 
 .main-nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: var(--color-1);
     height: var(--nav-height);
-    padding-right: 15px;
+    padding: 0 15px 0 30px;
 }
 
 .main-nav__list {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
 }
 
 .main-nav__item {
@@ -54,8 +60,12 @@ html {
     padding: 0 15px;
 }
 
+.main-nav__item i {
+    margin-right: 10px;
+}
+
 .main-nav a {
-    font-weight: 300;
+    font-size: 15px;
     color: var(--color-2);
 }
 
@@ -64,18 +74,8 @@ html {
     transition: color 0.2s;
 }
 
-.name {
-    font-size: 50px;
-}
-
-.description {
-    font-size: 25px;
-    font-weight: normal;
-    margin-bottom: 30px;
-}
-
-.name-and-description {
-    margin: 130px 0;
+.social {
+    margin: 30px 0;
 }
 
 .social ul {
@@ -179,16 +179,12 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    .name {
-        font-size: 45px;
-    }
-
-    .description, .social__item {
-        font-size: 23px;
-    }
-
     .social ul {
         padding: 8px 12px 9.6px;
+    }
+
+    .social__item {
+        font-size: 23px;
     }
 
     .portfolio-projects img {
@@ -197,11 +193,6 @@ footer p {
 }
 
 @media (max-width: 850px) {
-    .code-logo a {
-        display: flex;
-        filter: invert(1);
-    }
-
     .hamburger {
         display: block;
         background: none;
@@ -222,11 +213,13 @@ footer p {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: var(--nav-height);
+        top: 60px;
+        margin-right: 5px;
         background-color: var(--color-1);
         right: 0;
-        padding: 0 15px;
-        border-radius: 8px 0 8px 8px;
+        padding: 10px;
+        border-radius: 8px;
+        z-index: 1;
     }
 
     .main-nav__list.active {
@@ -234,7 +227,7 @@ footer p {
     }
 
     .main-nav__item {
-        padding: 15px;
+        padding: 10px;
     }
 }
 
