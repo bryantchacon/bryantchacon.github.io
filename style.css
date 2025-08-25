@@ -12,10 +12,6 @@
     --color-3: #8F90A6;
     --hover-color: #1da1f2;
     --display: inline-block;
-    --cristal-bg: rgba(255, 255, 255, 0.7);
-    --cristal-blur: blur(10px);
-    --cristal-radius: 30px;
-    --cristal-border: 2px solid rgba(255, 255, 255, 1);
     --nav-height: 55px;
 }
 
@@ -75,17 +71,7 @@ html {
 }
 
 .social {
-    margin: 30px 0;
-}
-
-.social ul {
-    width: fit-content;
-    margin: 0 auto;
-    background-color: var(--cristal-bg);
-    backdrop-filter: var(--cristal-blur);
-    border-radius: var(--cristal-radius);
-    border: var(--cristal-border);
-    padding: 10px 15px 12px;
+    margin: 10px 0 100px;
 }
 
 .social__item {
@@ -94,13 +80,18 @@ html {
     margin: 0 8px;
 }
 
-.social__item:nth-child(1) i { color: #ea4335; }
-.social__item:nth-child(2) i { color: #0a66c2; }
-.social__item:nth-child(3) i { color: #6e5494; }
-.social__item:nth-child(4) i { color: #14171a; }
-.social__item:nth-child(5) i { color: #7cbb00; }
+.social__item i {
+    color: var(--color-1);
+    transition: color 0.2s, transform 0.2s;
+}
 
-.social i:hover {
+.social__item:nth-child(1):hover i { color: #ea4335; }
+.social__item:nth-child(2):hover i { color: #0a66c2; }
+.social__item:nth-child(3):hover i { color: #6e5494; }
+.social__item:nth-child(4):hover i { color: #14171a; }
+.social__item:nth-child(5):hover i { color: #7cbb00; }
+
+.social__item:hover i {
     transform: scale(1.1);
 }
 
@@ -119,9 +110,9 @@ html {
 }
 
 .portfolio-projects img {
-    width: 280px;
-    height: auto;
-    border-radius: var(--cristal-radius);
+    width: 300px;
+    aspect-ratio: 4 / 3;
+    border-radius: 15px;
     padding: 5px;
 }
 
@@ -178,21 +169,18 @@ footer p {
     color: var(--color-3);
 }
 
-@media (max-width: 600px) {
-    .social ul {
-        padding: 8px 12px 9.6px;
-    }
-
+@media (max-width: 604px) {
     .social__item {
         font-size: 23px;
     }
 
     .portfolio-projects img {
         width: 350px;
+        height: 263px;
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 909px) {
     .hamburger {
         display: block;
         background: none;
@@ -227,7 +215,7 @@ footer p {
     }
 
     .main-nav__item {
-        padding: 10px;
+        padding: 20px;
     }
 }
 
@@ -237,7 +225,7 @@ footer p {
     }
 }
 
-@media (max-width: 1134px) {
+@media (max-width: 1214px) {
     .portfolio {
         margin-bottom: 70px;
     }
