@@ -12,7 +12,7 @@ async function loadFontAwesome() {
     document.head.appendChild(link);
 }
 
-async function hamburgerMenu() {
+function hamburgerMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navList = document.querySelector('.main-nav__list');
     const icon = hamburger.querySelector('i');
@@ -55,8 +55,24 @@ async function hamburgerMenu() {
     });
 }
 
+function fetchBlog () {
+    const mainContainer = document.getElementById('main-container');
+    const blogButton = document.getElementById('blog-button');
+    
+    blogButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        fetch('blog.html')
+            .then(response => response.text())
+            .then(data => {
+                mainContainer.innerHTML = data;
+            })
+            .catch(error => console.error(error));
+    });
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     await loadFont();
     await loadFontAwesome();
-    await hamburgerMenu();
+    hamburgerMenu();
+    fetchBlog();
 });
