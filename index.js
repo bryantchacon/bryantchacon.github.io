@@ -55,24 +55,8 @@ function hamburgerMenu() {
     });
 }
 
-function fetchBlog () {
-    const mainContainer = document.querySelector('.main-container');
-    const blogButton = document.querySelector('.blog-button');
-    
-    blogButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        fetch('blog.html')
-            .then(response => response.text())
-            .then(data => {
-                mainContainer.innerHTML = data;
-            })
-            .catch(error => console.error(error));
-    });
-}
-
 document.addEventListener('DOMContentLoaded', async () => {
     await loadFont();
     await loadFontAwesome();
     hamburgerMenu();
-    fetchBlog();
 });
