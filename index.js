@@ -56,8 +56,8 @@ function hamburgerMenu() {
 }
 
 function fetchBlog () {
-    const mainContainer = document.getElementById('main-container');
-    const blogButton = document.getElementById('blog-button');
+    const mainContainer = document.querySelector('.main-container');
+    const blogButton = document.querySelector('.blog-button');
     
     blogButton.addEventListener('click', (e) => {
         e.preventDefault();
