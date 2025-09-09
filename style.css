@@ -29,6 +29,10 @@ body {
     min-height: 100vh;
 }
 
+header {
+    background-color: var(--color-1);
+}
+
 main {
     flex: 1;
 }
@@ -52,9 +56,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-1);
     height: var(--nav-height);
     padding: 0 15px 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .main-nav__list {
@@ -67,7 +72,7 @@ main {
 }
 
 .main-nav__item i {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .main-nav a {
@@ -80,38 +85,13 @@ main {
     transition: color 0.2s;
 }
 
-.social {
-    margin: 10px 0 100px;
-}
-
-.social__item {
-    display: var(--display);
-    font-size: 25px;
-    margin: 0 8px;
-}
-
-.social__item i {
-    color: var(--color-1);
-    transition: color 0.2s, transform 0.2s;
-}
-
-.social__item:nth-child(1):hover i { color: #ea4335; }
-.social__item:nth-child(2):hover i { color: #0a66c2; }
-.social__item:nth-child(3):hover i { color: #6e5494; }
-.social__item:nth-child(4):hover i { color: #14171a; }
-.social__item:nth-child(5):hover i { color: #7cbb00; }
-
-.social__item:hover i {
-    transform: scale(1.1);
-}
-
 .title {
     font-size: 23px;
     font-weight: normal;
     margin-bottom: 40px;
 }
 
-.about, .stack {
+header, .about, .stack, .social {
     margin-bottom: 100px;
 }
 
@@ -164,7 +144,7 @@ main {
 }
 
 .stack-title {
-    margin-bottom: 18px !important;
+    margin-bottom: 15px !important;
 }
 
 .stack__item {
@@ -177,6 +157,27 @@ main {
     height: 50px;
     aspect-ratio: 1 / 1;
     object-fit: contain;
+}
+
+.social__item {
+    display: var(--display);
+    font-size: 25px;
+    margin: 0 8px;
+}
+
+.social__item i {
+    color: var(--color-1);
+    transition: color 0.2s, transform 0.2s;
+}
+
+.social__item:nth-child(1):hover i { color: #ea4335; }
+.social__item:nth-child(2):hover i { color: #0a66c2; }
+.social__item:nth-child(3):hover i { color: #6e5494; }
+.social__item:nth-child(4):hover i { color: #14171a; }
+.social__item:nth-child(5):hover i { color: #7cbb00; }
+
+.social__item:hover i {
+    transform: scale(1.1);
 }
 
 footer {
