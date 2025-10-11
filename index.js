@@ -58,5 +58,5 @@ function hamburgerMenu() {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadFont();
     await loadFontAwesome();
-    hamburgerMenu();
+    // hamburgerMenu();
 });
