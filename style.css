@@ -34,26 +34,6 @@ header {
     margin-bottom: 10px;
 }
 
-.social__item {
-    display: var(--display);
-    font-size: 25px;
-    margin: 0 8px;
-}
-
-.social__item i {
-    color: var(--color-1);
-    transition: color 0.2s, transform 0.2s;
-}
-
-.social__item:nth-child(1):hover i { color: #0a66c2; }
-.social__item:nth-child(2):hover i { color: #6e5494; }
-.social__item:nth-child(3):hover i { color: #14171a; }
-.social__item:nth-child(4):hover i { color: #ea4335; }
-
-.social__item:hover i {
-    transform: scale(1.1);
-}
-
 main {
     flex: 1;
 }
@@ -90,7 +70,7 @@ main {
 
 .main-nav__item {
     background-color: var(--color-4);
-    border-radius: 8px;
+    border-radius: 6px;
     transition: transform 0.2s ease;
     line-height: 1;
 }
@@ -115,6 +95,26 @@ main {
     margin-right: 5px;
 }
 
+.social__item {
+    display: var(--display);
+    font-size: 25px;
+    margin: 0 8px;
+}
+
+.social__item i {
+    color: var(--color-1);
+    transition: color 0.2s, transform 0.2s;
+}
+
+.social__item:nth-child(1):hover i { color: #0a66c2; }
+.social__item:nth-child(2):hover i { color: #6e5494; }
+.social__item:nth-child(3):hover i { color: #14171a; }
+.social__item:nth-child(4):hover i { color: #ea4335; }
+
+.social__item:hover i {
+    transform: scale(1.1);
+}
+
 .title {
     font-size: 23px;
     font-weight: normal;
@@ -125,28 +125,28 @@ main {
     margin-bottom: 100px;
 }
 
-.portfolio {
+.portfolio, .posts {
     margin-bottom: 70px;
 }
 
-.portfolio-projects {
+.portfolio-projects, .posts-articles {
     max-width: 1300px;
     margin: 0 auto;
 }
 
-.portfolio-projects li {
+.portfolio-projects li, .posts-articles li {
     display: var(--display);
     margin-bottom: 30px;
 }
 
-.portfolio-projects img {
+.portfolio-projects img, .posts-articles img {
     width: 300px;
     aspect-ratio: 4 / 3;
     border-radius: 15px;
     padding: 5px;
 }
 
-.portfolio-projects img:hover {
+.portfolio-projects img:hover, .posts-articles img:hover {
     background: linear-gradient(90deg, #45a2ff, #ff8080, #45a2ff, #ff8080);
     background-size: 300% 100%;
     animation: animate-border 1s linear infinite;
@@ -203,7 +203,7 @@ footer p {
         font-size: 23px;
     }
 
-    .portfolio-projects img {
+    .portfolio-projects img, .posts-articles img {
         width: 350px;
         height: 263px;
     }
