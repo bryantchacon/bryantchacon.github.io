@@ -217,9 +217,9 @@ footer p {
         font-size: 25px;
         color: var(--color-2);
         cursor: pointer;
-    } */
+    }
 
-    /* .main-nav__list {
+    .main-nav__list {
         display: none;
         flex-direction: column;
         position: absolute;
