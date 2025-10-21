@@ -58,8 +58,8 @@ main {
     align-items: center;
     justify-content: space-between;
     height: var(--nav-height);
-    padding: 0 30px;
-    max-width: 1200px;
+    padding: 0 10px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 
@@ -218,10 +218,6 @@ footer p {
         color: var(--color-2);
         cursor: pointer;
     } */
-
-    .main-nav {
-        padding: 0 15px;
-    }
 
     /* .main-nav__list {
         display: none;
