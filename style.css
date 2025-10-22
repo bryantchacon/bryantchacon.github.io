@@ -59,7 +59,7 @@ main {
     justify-content: space-between;
     height: var(--nav-height);
     padding: 0 10px;
-    max-width: 1150px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -130,7 +130,7 @@ main {
 }
 
 .portfolio-projects, .posts-articles {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -169,7 +169,7 @@ main {
 }
 
 .about p, .stack ul {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -209,6 +209,12 @@ footer p {
     }
 }
 
+@media (max-width: 860px) {
+    .about p, .stack ul {
+        margin: 0 30px;
+    }
+}
+
 @media (max-width: 909px) {
     /* .hamburger {
         display: block;
@@ -238,10 +244,4 @@ footer p {
     .main-nav__item {
         padding: 20px;
     } */
-}
-
-@media (max-width: 960px) {
-    .about p, .stack ul {
-        margin: 0 30px;
-    }
 }
