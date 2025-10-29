@@ -1835,14 +1835,14 @@ console.log(animals.slice(2, -1)) // [ 'camel', 'duck' ]
 console.log(animals.slice()) // [ 'ant', 'bison', 'camel', 'duck', 'elephant' ]
 // --------------------------
 
-// .forEach() - INMUTABLE - Recibe una función como parámetro y la aplica a cada elemento de un array, puede devolver otro array o solo un elemento.
+// .forEach() - INMUTABLE - Recibe una función como parámetro y la aplica a cada elemento de un array, puede devolver otro array o solo un elemento por medio de un console.log().
 
 // No crea un nuevo array.
 
-// Siempre devuelve undefined, así que no se guarda en una variable para usar el resultado, ejemplo:
+// Siempre devuelve undefined, así que aunque se guarde en una variable y se imprima no funcionara, ejemplo:
 
 const numbersForEach = [1, 2, 3];
-const resultForEach = numbersForEach.forEach(num => console.log(num)); // Aquí es donde se imprimen los elementos del array, no se guarda en una variable para después imprimirlo porque no funcionara.
+const resultForEach = numbersForEach.forEach(num => console.log(num));
 
 console.log(resultForEach); // undefined
 
